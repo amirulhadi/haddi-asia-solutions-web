@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Navigation } from '@/components/layout/Navigation'
+import { Footer } from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Haddi Asia Solutions - Your Trusted Partner for Scalable Digital Systems',
-  description: 'Premier technology consultancy specializing in digital transformation, AI-enabled platforms, and scalable web systems.',
+  title: 'HANS Consulting Group - Data-Driven Business Intelligence',
+  description: 'Modern tech consulting for data & revenue intelligence. We build Revenue Visibility Systems, analytics platforms, and decision intelligence for modern businesses.',
 }
 
 export default function RootLayout({
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

@@ -1,23 +1,21 @@
-import Hero from '@/components/Hero'
-import ExecutiveSummary from '@/components/ExecutiveSummary'
-import MissionVision from '@/components/MissionVision'
-import Services from '@/components/Services'
-import ValueProposition from '@/components/ValueProposition'
-import TechnologyStack from '@/components/TechnologyStack'
-import CaseStudies from '@/components/CaseStudies'
-import ContactCTA from '@/components/ContactCTA'
+import { HeroSection } from '@/components/sections/HeroSection'
+import { ProblemSection } from '@/components/sections/ProblemSection'
+import { ServicesSection } from '@/components/sections/ServicesSection'
+import { SignatureOfferSection } from '@/components/sections/SignatureOfferSection'
+import { PortfolioSection } from '@/components/sections/PortfolioSection'
+import { ExpertiseSection } from '@/components/sections/ExpertiseSection'
+import { CTABanner } from '@/components/sections/CTABanner'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Hero />
-      <ExecutiveSummary />
-      <MissionVision />
-      <Services />
-      <ValueProposition />
-      <TechnologyStack />
-      <CaseStudies />
-      <ContactCTA />
+      <HeroSection />
+      <ProblemSection />
+      <ServicesSection />
+      <SignatureOfferSection />
+      <PortfolioSection />
+      <ExpertiseSection />
+      <CTABanner />
     </main>
   )
 }
