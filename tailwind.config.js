@@ -8,26 +8,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Brand Colors - McKinsey × Stripe × AWS Partner inspired
+        // HANS Brand Colors
+        'hans-navy': '#0B1F3F',
+        'hans-white': '#FFFFFF',
+        'hans-grey': '#F5F5F5',
+        'hans-teal': '#00BFA6',
+        'hans-orange': '#FF6B35',
+        // Legacy support
         primary: {
-          DEFAULT: '#0F172A', // Charcoal Navy
-          light: '#1e293b',
+          DEFAULT: '#0B1F3F',
+          light: '#1a2f4f',
         },
         secondary: {
-          DEFAULT: '#334155', // Slate Blue
-          light: '#475569',
+          DEFAULT: '#00BFA6',
+          light: '#00d9c0',
         },
         neutral: {
-          DEFAULT: '#94A3B8', // Cool Gray
-          dark: '#64748b',
+          DEFAULT: '#64748b',
+          dark: '#475569',
           light: '#cbd5e1',
         },
-        accent: {
-          DEFAULT: '#38BDF8', // Soft Steel Blue (used sparingly)
-          dark: '#0ea5e9',
-          light: '#7dd3fc',
-        },
-        // Base colors for text/backgrounds that are not brand-specific
+        // Base colors
         white: '#FFFFFF',
         black: '#000000',
         gray: {
@@ -44,11 +45,24 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['48px', { lineHeight: '1.2', fontWeight: '700', letterSpacing: '-0.02em' }],
+        'h2': ['36px', { lineHeight: '1.3', fontWeight: '600', letterSpacing: '-0.01em' }],
+        'h3': ['24px', { lineHeight: '1.4', fontWeight: '500' }],
+        'h4': ['18px', { lineHeight: '1.5', fontWeight: '400' }],
+        'h5': ['14px', { lineHeight: '1.5', fontWeight: '400' }],
       },
       spacing: {
         '128': '32rem',
         '144': '36rem',
+      },
+      transitionDuration: {
+        '300': '300ms',
+      },
+      transitionTimingFunction: {
+        'ease-in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },

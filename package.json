@@ -15,7 +15,8 @@
     "react-dom": "^18.2.0",
     "@mui/material": "^5.14.0",
     "@mui/icons-material": "^5.14.0",
-    "framer-motion": "^10.16.0"
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.294.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
